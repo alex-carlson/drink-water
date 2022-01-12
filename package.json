@@ -25,13 +25,15 @@
     "build": {
         "appId": "drinkWater",
         "mac": {
-            "category": "public.app-category.productivity"
+            "category": "public.app-category.productivity",
+            "icon": "./images/logo-512.png"
         },
         "linux": {
             "target": [
                 "AppImage",
                 "deb"
-            ]
+            ],
+            "icon": "./images/logo-256.png"
         },
         "win": {
             "target": "NSIS",

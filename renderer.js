@@ -56,6 +56,8 @@ function formatTime(time) {
 document.getElementById("reset").addEventListener("click", reset);
 
 function reset() {
+    // clear timeout countdown
+    clearTimeout(countDown);
     setTime();
     countDown();
 }
