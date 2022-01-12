@@ -5,8 +5,6 @@
 // selectively enable features needed in the rendering
 // process.
 
-// const { Notification } = require('electron');
-
 let timeRemaining = 0;
 let startHeight = 200;
 let drinkTime = 3600;
@@ -56,10 +54,12 @@ function formatTime(time) {
 document.getElementById("reset").addEventListener("click", reset);
 
 function reset() {
-    // clear timeout countdown
-    clearTimeout(countDown);
+    if(timeRemaining > 0) {
+        clearTimeout(countDown);
+    } else {
+        countDown();
+    }
     setTime();
-    countDown();
 }
 
 function showNotification(NOTIFICATION_TITLE, NOTIFICATION_MESSAGE) {
