@@ -1,0 +1,41 @@
+{
+    "name": "Drink-Water",
+    "version": "1.0.0",
+    "description": "A small app to remind you to drink water",
+    "main": "main.js",
+    "scripts": {
+        "start": "npm install && electron .",
+        "pack": "electron-builder --dir",
+        "dist": "electron-builder"
+    },
+    "repository": "https://github.com/alexcgd",
+    "keywords": [
+        "water",
+        "drink",
+        "timer"
+    ],
+    "author": "GitHub",
+    "license": "CC0-1.0",
+    "devDependencies": {
+        "electron": "^16.0.6",
+        "electron-builder": "^22.14.5",
+        "electron-packager": "^15.4.0",
+        "electron-reload": "^2.0.0-alpha.1"
+    },
+    "build": {
+        "appId": "drinkWater",
+        "mac": {
+            "category": "public.app-category.productivity"
+        },
+        "linux": {
+            "target": [
+                "AppImage",
+                "deb"
+            ]
+        },
+        "win": {
+            "target": "NSIS",
+            "icon": "./images/logo-256.png"
+        }
+    }
+}

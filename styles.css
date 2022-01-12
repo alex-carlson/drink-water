@@ -1,0 +1,52 @@
+/* styles.css */
+
+
+/* Add styles here to customize the appearance of your app */
+
+body {
+    /* set background color to gradient */
+    background: black;
+    color: #fff;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin: 0;
+    padding: 15px;
+    overflow: hidden;
+    text-align: center;
+    height: 340px;
+}
+
+h1 {
+    margin: 0;
+    padding: 5px 0 25px 0;
+    /* display: none; */
+}
+
+.bottle {
+    margin-top: 0;
+}
+
+button {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    color: #333;
+    font-size: 1.2em;
+    font-weight: bold;
+    margin: 0;
+    padding: 8px 10px;
+    width: 250px;
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+}
+
+button:hover {
+    background: #eee;
+    cursor: pointer;
+}
+
+button:active {
+    background: #eee;
+    border-color: #999;
+    color: #666;
+}

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
+    <link href="./styles.css" rel="stylesheet">
+    <title>Drink Water!</title>
+</head>
+
+<body>
+    <section>
+        <h1 id="timer">Sip sip bitch!</h1>
+    </section>
+    <section class=bottle>
+        <svg width="300" height="200">
+        <mask id="svgmask1">
+          <image height="180" x="90" y="20" xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="images/water-fill.png" mask="url(#svgmask1)"></image>
+        </mask>
+        <rect fill="#fff" width="500" height="500" x="0" y="10" mask="url(#svgmask1)"/>
+        <rect id="fillAmount" fill="#00ccff" width="500" height="500" x="0" y="200" mask="url(#svgmask1)"/>
+      </svg>
+    </section>
+    <section>
+        <button id="reset">reset</button>
+    </section>
+
+
+    <!-- You can also require other files to run in this process -->
+    <script src="./renderer.js"></script>
+    <script src="./timer.js"></script>
+</body>
+
+</html>
